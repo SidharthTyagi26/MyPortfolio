@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 5%;
+    margin-top: 5rem;
+}
+
+header {
+    margin-top: -80px;
+    position: fixed;
+    width: 88%;
+    padding: 0.2rem 0.6rem;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: right;
+    width: 100%;
+    padding-left: 33%;
+}
+
+nav a {
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 2px transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #b74b4b;
+}
+#projects {
+    padding: 5rem 0;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #b74b4b;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    width: 300px; /* Ensures all boxes are the same width */
+    height: 250px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.project-card:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: white;
+    flex-grow: 1; /* Makes sure text area stretches evenly */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #b74b4b;
+    color: white;
+    font-size: 1.rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-link i {
+    margin-left: 8px;
+}
+
+.project-link:hover {
+    background-color: #922f2f;
+    transform: scale(1.1);
+}
+
+
+#skills {
+    padding: 5rem 0;
+    color: white;
+}
+
+#skills h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #b74b4b;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #b74b4b;
+    margin-bottom: 0.8rem;
+}
+
+.skill-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.skill-category li {
+    margin-bottom: 0.8rem;
+}
+.skill-category {
+    background-color: #252525;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.skill-category:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.skill-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.skill-category:hover .skill-list {
+    display: block;
+}
+
+
+
